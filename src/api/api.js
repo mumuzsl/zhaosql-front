@@ -1,7 +1,7 @@
 // import axios from "axios";
 const axios = require('axios')
-// let base = "http://localhost:8080"
-let base = "http://47.98.147.56:9999"
+let base = "http://localhost:9999"
+// let base = "http://47.98.147.56:9999"
 
 export const selectData = (tableName, data) => {
   return axios.get(`${base}/data/select/${tableName}?page=` + data.page, data);
